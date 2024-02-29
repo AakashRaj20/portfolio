@@ -19,16 +19,16 @@ const About = () => {
         <h2 className="text-6xl md:text-8xl">Aakash Raj</h2>
         <RotatingTechs />
         <p className="text-lg md:text-2xl text-center lg:text-start">
-          I'm your go-to "Bob the Builder" for websites! Just like the famous
-          handyman, I'm not limited by tech stacks. Whether you've got a design
-          in mind or need one crafted, I'll bring it to life, no matter the tech
-          stack. Let's collaborate and build something amazing together, without
-          constraints!
+          I&apos;m your go-to &quot;Bob the Builder&quot; for websites! Just
+          like the famous handyman, I&apos;m not limited by tech stacks. Whether
+          you&apos;ve got a design in mind or need one crafted, I&apos;ll bring
+          it to life, no matter the tech stack. Let&apos;s collaborate and build
+          something amazing together, without constraints!
         </p>
         <div className="gap-4 flex">
           <Link href="#contact">
             <Button className="bg-white hover:bg-gray-200 text-black px-10">
-              Let's Talk
+              Let&apos;s Talk
             </Button>
           </Link>
           <Link
