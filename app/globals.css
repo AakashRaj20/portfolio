@@ -69,8 +69,7 @@
 
 @layer border {
   .border-gradient {
-    border-image: linear-gradient(to right, #eb5286, #f065aa, #845ec2);
-    border-image-slice: 1;
+    border-image: linear-gradient(to right, #eb5286, #f065aa, #845ec2) 1 stretch;
   }
 }
 
