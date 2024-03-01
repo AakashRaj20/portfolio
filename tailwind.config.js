@@ -110,5 +110,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-  purge: false,
 };
