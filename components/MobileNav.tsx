@@ -6,7 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const MobileNav = () => {
   return (
-    <div className="md:hidde">
+    <div className="md:hidden">
       <Sheet>
         <SheetTrigger asChild>
           <Image
