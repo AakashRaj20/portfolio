@@ -25,7 +25,7 @@ const About = () => {
           it to life, no matter the tech stack. Let&apos;s collaborate and build
           something amazing together, without constraints!
         </p>
-        <div className="gap-4 flex">
+        <div className="flex gap-4 ">
           <Link href="#contact">
             <Button className="bg-white hover:bg-gray-200 text-black px-10">
               Let&apos;s Talk
