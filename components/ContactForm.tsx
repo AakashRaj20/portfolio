@@ -49,77 +49,79 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={(e: SyntheticEvent) => handleSubmit(e)}
-      className="border-gradient border-4 p-4 max-w-[650px] w-full flex flex-col gap-y-10"
+      className="bg-gradient-to-r from-rose-500 via-fuchsia-600 to-indigo-700 p-1 max-w-[650px] w-full"
     >
-      <div className="grid w-full items-center gap-1.5">
-        <Label htmlFor="email">Name</Label>
-        <Input
-          value={name}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-            setName(e.target.value)
-          }
-          type="text"
-          id="name"
-          placeholder="Your Full Name"
-          required
+      <div className="bg-black w-full h-full flex flex-col p-4 gap-y-10">
+        <div className="grid w-full items-center gap-1.5">
+          <Label htmlFor="email">Name</Label>
+          <Input
+            value={name}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setName(e.target.value)
+            }
+            type="text"
+            id="name"
+            placeholder="Your Full Name"
+            required
+          />
+        </div>
+        <div className="grid w-full items-center gap-1.5">
+          <Label htmlFor="email">Email Address</Label>
+          <Input
+            value={email}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setEmail(e.target.value)
+            }
+            type="email"
+            id="email"
+            placeholder="Your Email Address"
+            required
+          />
+        </div>
+        <div className="grid w-full items-center gap-1.5">
+          <Label htmlFor="email">Phone Number</Label>
+          <Input
+            value={phone}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setPhone(e.target.value)
+            }
+            type="text"
+            id="phone"
+            placeholder="Your Phone Number"
+          />
+        </div>
+        <div className="grid w-full gap-1.5">
+          <Label htmlFor="message">Your message</Label>
+          <Textarea
+            value={message}
+            onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
+              setMessage(e.target.value)
+            }
+            placeholder="Type your message here...."
+            id="message"
+            required
+          />
+        </div>
+        <Button
+          className="bg-white text-black text-xl hover:bg-gray-200"
+          type="submit"
+        >
+          Submit
+        </Button>
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          transition={Slide}
         />
       </div>
-      <div className="grid w-full items-center gap-1.5">
-        <Label htmlFor="email">Email Address</Label>
-        <Input
-          value={email}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-            setEmail(e.target.value)
-          }
-          type="email"
-          id="email"
-          placeholder="Your Email Address"
-          required
-        />
-      </div>
-      <div className="grid w-full items-center gap-1.5">
-        <Label htmlFor="email">Phone Number</Label>
-        <Input
-          value={phone}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-            setPhone(e.target.value)
-          }
-          type="text"
-          id="phone"
-          placeholder="Your Phone Number"
-        />
-      </div>
-      <div className="grid w-full gap-1.5">
-        <Label htmlFor="message">Your message</Label>
-        <Textarea
-          value={message}
-          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
-            setMessage(e.target.value)
-          }
-          placeholder="Type your message here...."
-          id="message"
-          required
-        />
-      </div>
-      <Button
-        className="bg-white text-black text-xl hover:bg-gray-200"
-        type="submit"
-      >
-        Submit
-      </Button>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-        transition={Slide}
-      />
     </form>
   );
 };

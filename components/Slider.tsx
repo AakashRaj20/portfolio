@@ -58,30 +58,34 @@ const Slider = () => {
             <div className="p-1">
               <Card className="border-none">
                 <CardContent className="testimonial-card">
-                  <p className="text-xl">{test.review}</p>
-                  <div className="flex justify-between items-center">
-                    <div className="flex gap-x-4">
-                      <Image
-                        className="rounded-full"
-                        src={test.image}
-                        alt="client's image"
-                        width={50}
-                        height={50}
-                      />
-                      <div className="flex flex-col">
-                        <h5 className="font-medium text-lg">{test.name}</h5>
-                        <p className="text-sm md:text-base">{test.position}</p>
+                  <div className="w-full h-full bg-black px-3 py-6 md:p-6 flex flex-col gap-y-12">
+                    <p className="text-xl">{test.review}</p>
+                    <div className="flex justify-between items-center">
+                      <div className="flex gap-x-4">
+                        <Image
+                          className="rounded-full"
+                          src={test.image}
+                          alt="client's image"
+                          width={50}
+                          height={50}
+                        />
+                        <div className="flex flex-col">
+                          <h5 className="font-medium text-lg">{test.name}</h5>
+                          <p className="text-sm md:text-base">
+                            {test.position}
+                          </p>
+                        </div>
                       </div>
+                      <Link href={test.link} target="_blank">
+                        <Image
+                          className="bg-white"
+                          src="/images/linkedin.svg"
+                          alt="linkedin"
+                          width={40}
+                          height={40}
+                        />
+                      </Link>
                     </div>
-                    <Link href={test.link} target="_blank">
-                      <Image
-                        className="bg-white"
-                        src="/images/linkedin.svg"
-                        alt="linkedin"
-                        width={40}
-                        height={40}
-                      />
-                    </Link>
                   </div>
                 </CardContent>
               </Card>

@@ -19,27 +19,34 @@ const Articles = () => {
   ];
 
   return (
-    <div className="flex lg:px-24 md:px-4 py-16 flex-wrap md:flex-nowrap px-2 flex-col gap-y-6" id="articles">
-      <h2 className="text-4xl md:text-5xl text-center lg:text-start text-white ">Articles</h2>
+    <div
+      className="flex lg:px-24 md:px-4 py-16 flex-wrap md:flex-nowrap px-2 flex-col gap-y-6"
+      id="articles"
+    >
+      <h2 className="text-4xl md:text-5xl text-center lg:text-start text-white ">
+        Articles
+      </h2>
       <div className="flex gap-4 flex-wrap md:flex-nowrap justify-center md:justify-start">
         {data.map((article, index) => (
           <div
             key={index}
-            className="max-w-[400px] md:max-w-[300px] w-full border-gradient border-2 flex flex-col"
+            className="max-w-[400px] md:max-w-[300px] w-full bg-gradient-to-r from-rose-500 via-fuchsia-600 to-indigo-700 p-1 flex flex-col"
           >
-            <Image
-              src="/images/gfg_articles.png"
-              alt="gfg article"
-              width={400}
-              height={150}
-            />
-            <div className="p-3 flex flex-col gap-3">
-              <Link href={article.link} target="_blank">
-                <Button className="bg-white hover:bg-gray-200 text-black">
-                  Article
-                </Button>
-              </Link>
-              <p className="text-white">{article.heading}</p>
+            <div className="w-full h-full">
+              <Image
+                src="/images/gfg_articles.png"
+                alt="gfg article"
+                width={400}
+                height={150}
+              />
+              <div className="p-3 flex flex-col gap-3">
+                <Link href={article.link} target="_blank">
+                  <Button className="bg-white hover:bg-gray-200 text-black">
+                    Article
+                  </Button>
+                </Link>
+                <p className="text-white">{article.heading}</p>
+              </div>
             </div>
           </div>
         ))}
