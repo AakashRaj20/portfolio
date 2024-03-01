@@ -33,7 +33,7 @@ const Skills = () => {
       <h2 className="text-4xl md:text-5xl text-center lg:text-start text-white">
         Skills
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row m-auto md:m-0 gap-4 px-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row m-auto md:m-0 gap-4 px-1">
         <div className="main-skills-card">
           <div className="bg-black">
             <h3 className="text-white text-3xl py-5">Frontend</h3>
