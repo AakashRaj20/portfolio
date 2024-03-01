@@ -99,7 +99,7 @@
   }
 
   .project-card {
-    @apply max-w-[450px] w-full flex flex-col gap-y-6 border-gradient border-4;
+    @apply max-w-[450px] w-full p-1 bg-gradient-to-r from-rose-500 via-fuchsia-600 to-indigo-700;
   }
 
   .skills-card {
