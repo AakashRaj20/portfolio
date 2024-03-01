@@ -33,7 +33,7 @@ const About = () => {
           </Link>
           <Link
             href={
-              "https://drive.google.com/file/d/1uw1RCoQzniEzvvr_zXxiK1u4Cifxt1y0/view?usp=drive_link"
+              "https://drive.google.com/file/d/17zpY4iE9MfAQ6dsOiKnfxU91atrGyxNr/view?usp=drive_link"
             }
             target="_blank"
           >
