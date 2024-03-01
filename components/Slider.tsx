@@ -62,13 +62,15 @@ const Slider = () => {
                     <p className="text-xl">{test.review}</p>
                     <div className="flex justify-between items-center">
                       <div className="flex gap-x-4">
-                        <Image
-                          className="rounded-full"
-                          src={test.image}
-                          alt="client's image"
-                          width={50}
-                          height={50}
-                        />
+                        <div className="flex items-center">
+                          <Image
+                            className="rounded-full"
+                            src={test.image}
+                            alt="client's image"
+                            width={50}
+                            height={50}
+                          />
+                        </div>
                         <div className="flex flex-col">
                           <h5 className="font-medium text-lg">{test.name}</h5>
                           <p className="text-sm md:text-base">
