@@ -9,10 +9,10 @@ const About = () => {
       <div className="max-w-[300px] w-full flex justify-center items-center">
         <Image
           className="profile-blob"
-          src="/images/profile_gradient.png"
+          src="/images/profile_without_bg.png"
           alt="Picture of the author"
-          width={280}
-          height={280}
+          width={250}
+          height={250}
         />
       </div>
       <div className="text-white xl:px-24 flex flex-col gap-5 items-center lg:items-start">

@@ -100,7 +100,7 @@
   }
 
   .profile-blob {
-    @apply rounded-full  bg-cover bg-center transition ease-in-out delay-1000 animate-blobs;
+    @apply rounded-full bg-gradient-to-r from-rose-500 via-fuchsia-600 to-indigo-700 bg-cover bg-center transition ease-in-out delay-1000 animate-blobs;
   }
 
   .text-motion {
