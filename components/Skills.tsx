@@ -13,7 +13,7 @@ const Skills = () => {
     "Redux-Toolkit",
   ];
 
-  const backend = ["NodeJS", "ExpressJS", "Moongose", "Firebase", "REST API"];
+  const backend = ["NodeJS", "ExpressJS", "Firebase", "REST API"];
 
   const database = [
     "MongoDB",
@@ -37,7 +37,7 @@ const Skills = () => {
         <div className="main-skills-card">
           <div className="bg-black">
             <h3 className="text-white text-3xl py-5">Frontend</h3>
-            <div className="flex gap-4 flex-wrap p-4">
+            <div className="flex gap-4 flex-wrap p-2 md:p-4">
               {frontend.map((item, index) => {
                 return (
                   <div key={index} className="skills-card">
@@ -51,7 +51,7 @@ const Skills = () => {
         <div className="main-skills-card">
           <div className="bg-black w-full h-full">
             <h3 className="text-white text-3xl py-5">Backend</h3>
-            <div className="flex gap-4 flex-wrap p-4">
+            <div className="flex gap-4 flex-wrap p-2 md:p-4">
               {backend.map((item, index) => {
                 return (
                   <div key={index} className="skills-card">
@@ -65,7 +65,7 @@ const Skills = () => {
         <div className="main-skills-card">
           <div className="bg-black w-full h-full">
             <h3 className="text-white text-3xl py-5">Database</h3>
-            <div className="flex gap-4 flex-wrap p-4">
+            <div className="flex gap-4 flex-wrap p-2 md:p-4">
               {database.map((item, index) => {
                 return (
                   <div key={index} className="skills-card">
@@ -79,7 +79,7 @@ const Skills = () => {
         <div className="main-skills-card">
           <div className="bg-black w-full h-full">
             <h3 className="text-white text-3xl py-5">Tools</h3>
-            <div className="flex gap-4 flex-wrap p-4">
+            <div className="flex gap-4 flex-wrap p-2 md:p-4">
               {tools.map((item, index) => {
                 return (
                   <div key={index} className="skills-card">
